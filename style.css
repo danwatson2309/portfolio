@@ -213,3 +213,47 @@ section {
   margin-top: 10px;
   padding-top: 10px;
 }
+
+.contact .title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
+.contact {
+  font-family: "Courier New", sans-serif;
+  color: rgb(158, 152, 152);
+}
+
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.contact .linkedin:link {
+  color: rgb(158, 152, 152);
+}
+
+.contact .linkedin:visited {
+  color: rgb(158, 152, 152);
+}
+
+.contact .linkedin:hover {
+  color: black;
+}
+
+.contact .email:link {
+  color: rgb(158, 152, 152);
+}
+
+.contact .email:visited {
+  color: rgb(158, 152, 152);
+}
+
+.contact .email:hover {
+  color: black;
+}
