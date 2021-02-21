@@ -28,7 +28,7 @@
 .navbar .logo a {
   color: lightslategray;
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .navbar .logo a span {
@@ -58,11 +58,15 @@
   font-family: "Courier New", sans-serif;
   color: rgb(158, 152, 152);
 
-  display: flex;
+  display: inline-block;
+
   background: url("./backgorund.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   min-height: 500px;
+  width: 105%;
 }
 
 .home .max-width {
@@ -257,4 +261,227 @@ section {
 
 .contact .email:hover {
   color: black;
+}
+
+@media (max-width: 700px) {
+  .title {
+    color: black;
+  }
+
+  .column-title {
+    color: darkslategrey;
+  }
+
+  .navbar .max-width {
+    padding-left: 20px;
+  }
+  /* Home section styling */
+
+  .home {
+    font-family: "Courier New", sans-serif;
+    color: rgb(158, 152, 152);
+
+    display: inline-block;
+
+    background: url("./backgorund.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+  }
+
+  .home .max-width {
+    margin: 150px 0px 20px 0px;
+    width: 300px;
+    text-align: left;
+  }
+
+  .home .home-content .text-1 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .home .home-content .text-2 {
+    color: white;
+    font-size: 55px;
+    font-weight: 400;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  /* About Section Styling */
+  section {
+    padding: 5px 0;
+  }
+
+  .about .max-width {
+    padding: 30px;
+  }
+
+  .about .title {
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+  }
+
+  .about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about .about-content .column-left {
+    width: 50%;
+  }
+
+  .about .about-content .column-left img {
+    height: 150px;
+    width: 150px;
+    border-radius: 7%;
+    object-fit: cover;
+  }
+
+  .about .about-content .column-right {
+    width: 50%;
+  }
+
+  .about .about-content .column-right .text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .about .about-content .column-right .text span {
+    color: slategray;
+    font-weight: 700;
+  }
+
+  .about .about-content .column-right .text p {
+    width: 300px;
+    text-align: justify;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about .about-content .column-right a {
+    display: inline-block;
+    background: slategrey;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 2px solid slategrey;
+  }
+
+  .about .about-content .column-right a:hover {
+    background: whitesmoke;
+    color: slategrey;
+  }
+
+  .project .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+  }
+
+  .project {
+    font-family: "Courier New", sans-serif;
+    color: rgb(158, 152, 152);
+  }
+
+  .project .project-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .project .project-content .figma-column {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .project .project-content .app-column {
+    display: inline-block;
+    width: 40%;
+  }
+
+  .app-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .iframe {
+    height: 200px;
+    width: 200px;
+  }
+
+  .project .column-title {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+  }
+
+  .project .project-title {
+    font-size: 25px;
+    font-weight: 350;
+    margin: 10px;
+    padding-top: 10px;
+    width: 200px;
+  }
+
+  .contact .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 0px;
+  }
+
+  .contact .max-width {
+    padding: 10px;
+  }
+
+  .contact {
+    font-family: "Courier New", sans-serif;
+    color: rgb(158, 152, 152);
+  }
+
+  .contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .contact .linkedin:link {
+    color: rgb(158, 152, 152);
+  }
+
+  .contact .linkedin:visited {
+    color: rgb(158, 152, 152);
+  }
+
+  .contact .linkedin:hover {
+    color: black;
+  }
+
+  .contact .email:link {
+    color: rgb(158, 152, 152);
+  }
+
+  .contact .email:visited {
+    color: rgb(158, 152, 152);
+  }
+
+  .contact .email:hover {
+    color: black;
+  }
 }
